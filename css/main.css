@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6, .button, .discover{
   font-family: 'Teko', Arial, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 h2, h3, h4, h5, h6{
@@ -92,11 +93,11 @@ nav ul li.active a{
 
 
 .button{
-  padding: 7px 15px;
+  padding: 9px 15px;
   border: 2px solid rgba(255,255,255,0.5);
   margin: 0 auto;
   background: transparent;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   letter-spacing: 2px;
 }
@@ -108,7 +109,7 @@ nav ul li.active a{
 .hero a{
   display: block;
   margin: 0 auto;
-  width: 160px;
+  width: 190px;
 }
 
 .title{
@@ -118,6 +119,10 @@ nav ul li.active a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
+}
+
+.title .button {
+  padding: 10px 15px 7px;
 }
 
 
@@ -141,11 +146,117 @@ nav ul li.active a{
   letter-spacing: 3px;
 }
 
+.cta {
+  min-height: 275px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0;
+}
 
+.cta h2 {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
 
+.cta .button {
+  background: #9a8c6a;
+  border: none;
+  padding: 18px 50px;
+  letter-spacing: 5px;
+}
 
+.work {
+  background: #ddd;
+}
 
+.work .projects {
+  float: left;
+  width: 50%;
+}
 
+.work img {
+  width: 100%;
+  display: block;
+}
+
+.slideshow li,
+.single-project,
+.featured-projects {
+  position: relative;
+}
+
+.slideshow-nav {
+  position: absolute;
+  z-index: 3;
+  bottom: 40px;
+  left: 60px;
+}
+
+.slideshow-nav li {
+  height: 4px;
+  background: #fff;
+  width: 35px;
+  margin: 0;
+  margin-right: 10px;
+  opacity: 0.4;
+}
+
+.slideshow-nav li.active {
+  opacity: 1;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 100px;
+  padding: 0px 60px;
+}
+
+.project-info h2 {
+  font-size: 60px;
+}
+
+.project-info h3 {
+  font-size: 30px;
+  opacity: 0.3;
+}
+
+.single-project .project-info {
+  padding: 0px 50px 0 30px;
+  bottom: 40px;
+}
+
+.single-project h2,
+.single-project p {
+  color: #fff;
+}
+
+.single-project p {
+  opacity: 0.7;
+}
+
+.show-more {
+  clear: both;
+  background: #30282a;
+  padding: 20px 0 30px;
+  text-align: center;
+}
+
+.show-more a {
+  border: 0;
+  border-bottom: 2px solid white;
+  padding: 0;
+  padding-bottom: 6px;
+}
+
+.connect {
+  height: 740px;
+  background: aquamarine;
+}
 
 
 

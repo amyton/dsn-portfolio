@@ -24,6 +24,10 @@ h2, h3, h4, h5, h6{
 
 a {
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 h1{
@@ -71,6 +75,10 @@ nav ul li a{
 
 nav ul li:hover{
   border-bottom: 3px solid #fff;
+}
+
+nav ul li:hover a {
+  opacity: 0.9;
 }
 
 nav ul li.active a{
@@ -125,7 +133,6 @@ nav ul li.active a{
   padding: 10px 15px 7px;
 }
 
-
 .discover{
   position: absolute;
   text-align: center;
@@ -144,6 +151,11 @@ nav ul li.active a{
   text-decoration: none;
   color: #ddd;
   letter-spacing: 3px;
+}
+
+.title .button:hover,
+.discover a:hover {
+  opacity: 0.6;
 }
 
 .cta {
@@ -168,6 +180,13 @@ nav ul li.active a{
   border: none;
   padding: 18px 50px;
   letter-spacing: 5px;
+  transition: all 0.7s ease;
+}
+
+.cta .button:hover {
+  background: none;
+  color: #9a8c6a;
+  border: 2px solid #9a8c6a;
 }
 
 .work {
@@ -253,6 +272,11 @@ nav ul li.active a{
   padding-bottom: 6px;
 }
 
+.show-more a:hover {
+  color: #9a8c6a;
+  border-bottom: 2px solid #9a8c6a;
+}
+
 .connect {
   padding: 57px;
 }
@@ -335,6 +359,11 @@ nav ul li.active a{
   letter-spacing: 4px;
 }
 
+.social a:hover {
+  color: #9a8c6a;
+  opacity: 0.9;
+}
+
 .contact {
   padding: 70px 0;
   background: #30282a;
@@ -369,4 +398,68 @@ nav ul li.active a{
   margin-bottom: 10px;
 }
 
+.footer-links {
+  padding: 50px 0 20px;
+}
+
+.footer-links h4 {
+  font-size: 30px;
+  color: #000;
+  border-bottom: 2px solid #000;
+  font-weight: 300;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-links nav div {
+  display: inline-block;
+  /*border: 1px solid pink;*/
+  margin-left: -4px;
+  vertical-align: top;
+  padding: 0px 14px;
+}
+
+.footer-links .about,
+.footer-links .works {
+  width: 25%;
+}
+
+.footer-links .services {
+  width: 50%;
+}
+
+.footer-links li {
+  display: block;
+  height: auto;
+}
+
+.footer-links li:hover {
+  border: none;
+}
+
+.footer-links a {
+  opacity: 1;
+  color: #555;
+}
+
+.footer-links a:hover {
+  color: #9a8c6a;
+}
+
+.services li {
+  width: 50%;
+  float: left;
+  margin: 0;
+}
+
+.copyright {
+  margin-top: 90px;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+}
+
+.copyright p {
+  padding-top: 15px;
+  font-size: 12px;
+}
 

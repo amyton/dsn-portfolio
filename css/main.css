@@ -254,10 +254,119 @@ nav ul li.active a{
 }
 
 .connect {
-  height: 740px;
-  background: aquamarine;
+  padding: 57px;
 }
 
+.connect li {
+  display: inline-block;
+}
 
+.connect h3,
+.connect h4 {
+  color: #000;
+}
+
+.connect h3 {
+  font-size: 40px;
+}
+
+.connect h4 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.details {
+  margin-bottom: 70px;
+}
+
+.details li {
+  width: 50%;
+}
+
+.details li:first-child {
+  padding-right: 20px;
+}
+
+.details li:last-child {
+  padding-left: 20px;
+}
+
+.social {
+  height: 220px;
+}
+
+.social ul {
+  margin-top: 25px;
+}
+
+.social li {
+  width: 25%;
+  padding: 15px;
+  margin-right: -4px;
+  display: table;
+  float: left;
+}
+
+.social li:first-child {
+  padding-left: 0;
+}
+
+.social li:last-child {
+  padding-right: 0;
+}
+
+.social .fa {
+  display: block;
+  font-size: 38px;
+  margin-bottom: 5px;
+}
+
+.social a {
+  color: #fff;
+  width: 100%;
+  background: #30282a;
+  display: inline-block;
+  text-align: center;
+  height: 140px;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Teko", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact {
+  padding: 70px 0;
+  background: #30282a;
+}
+
+.contact h5,
+.contact h6 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 12px;
+}
+
+.contact h6 {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.contact-info {
+  background: #9a8c6a;
+  padding: 30px 0;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.contact-info img {
+  margin: 0 auto;
+  width: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
 
 

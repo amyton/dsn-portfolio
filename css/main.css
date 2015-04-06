@@ -127,6 +127,9 @@ nav ul li.active a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+  -moz-transform: translate(-50%, -60%);
+  -o-transform: translate(-50%, -60%);
 }
 
 .title .button {

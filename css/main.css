@@ -142,6 +142,9 @@ nav ul li.active a{
   left: 50%;
   bottom: 25px;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .discover img{
   display: block;

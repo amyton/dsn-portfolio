@@ -70,6 +70,9 @@ header{
   margin: 0 auto;
 }
 
+.fa-bars {
+  display: none;
+}
 
 nav ul li{
   display: inline-block;
@@ -672,5 +675,56 @@ nav ul li.active a{
 
   .footer-links .works {
     margin-top: 50px;
+  }
+
+  .navigation {
+    padding: 0;
+    width: 100%;
+  }
+
+  .fa-bars {
+      display: block;
+      color: white;
+      font-size: 25px;
+      padding: 20px;
+  }
+
+  #menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  nav ul li:hover {
+    border-bottom: 3px solid #fff;
+  }
+
+  #menu {
+    position: relative;
+    z-index: 5;
+    top: -5px;
+  }
+
+  #menu li {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  #menu li:hover {
+    border-bottom: none;
+  }
+
+  #menu li a {
+    display: block;
+  }
+
+  #menu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
   }
 }

@@ -3,9 +3,20 @@
   box-sizing: border-box;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+html {
+  font-size: 16px;
+}
+
 body{
   font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 300;
   color: #555;
@@ -322,10 +333,6 @@ nav ul li.active a{
   padding-left: 20px;
 }
 
-.social {
-  height: 220px;
-}
-
 .social ul {
   margin-top: 25px;
 }
@@ -374,7 +381,6 @@ nav ul li.active a{
 .contact {
   padding: 70px 0;
   background: #30282a;
-  margin-top: 80px;
 }
 
 .contact h5,
@@ -471,3 +477,23 @@ nav ul li.active a{
   font-size: 12px;
 }
 
+
+
+
+@media (screen and max-width: 1024px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  .cta {
+    width: 90%;
+  }
+}
+
+@media (screen and max-width: 768px) {
+
+}
+
+@media (screen and max-width: 480px) {
+
+}

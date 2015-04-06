@@ -311,6 +311,7 @@ nav ul li.active a{
 
 .details li {
   width: 50%;
+  vertical-align: top;
 }
 
 .details li:first-child {

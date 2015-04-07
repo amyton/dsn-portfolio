@@ -20,6 +20,7 @@ body{
   line-height: 1.5;
   font-weight: 300;
   color: #555;
+  min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h6, .button, .discover{
@@ -44,7 +45,7 @@ a {
 h1{
   font-size: 120px;
   color: #fff;
-  letter-spacing: 13px;
+  letter-spacing: .8125rem;
   text-align: center;
   line-height: 1;
   margin-bottom: 30px;
@@ -74,12 +75,15 @@ header{
   display: none;
 }
 
+#menu {
+  display: none;
+}
+
 nav ul li{
   display: inline-block;
   margin-right: 38px;
   height: 42px;
 }
-
 
 nav ul li a{
   color: #fff;
@@ -119,7 +123,7 @@ nav ul li.active a{
   border: 2px solid rgba(255,255,255,0.5);
   margin: 0 auto;
   background: transparent;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   letter-spacing: 2px;
 }
@@ -187,7 +191,7 @@ nav ul li.active a{
 }
 
 .cta h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #000;
   text-align: center;
   letter-spacing: 4px;
@@ -256,11 +260,11 @@ nav ul li.active a{
 }
 
 .project-info h2 {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .project-info h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
   opacity: 0.3;
 }
 
@@ -315,7 +319,7 @@ nav ul li.active a{
 }
 
 .connect h4 {
-  font-size: 30px;
+  font-size: 1.875rem;
   margin: 10px 0;
 }
 
@@ -358,7 +362,7 @@ nav ul li.active a{
 
 .social .fa {
   display: block;
-  font-size: 38px;
+  font-size: 2.375rem;
   margin-bottom: 5px;
 }
 
@@ -390,7 +394,7 @@ nav ul li.active a{
 .contact h6 {
   color: #fff;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   font-weight: 300;
   margin-top: 12px;
@@ -420,7 +424,7 @@ nav ul li.active a{
 }
 
 .footer-links h4 {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #000;
   border-bottom: 2px solid #000;
   font-weight: 300;
@@ -489,11 +493,11 @@ nav ul li.active a{
 
 @media screen and (max-width: 1024px) {
   .title {
-    width: 100%;
+    width: 99%;
   }
 
   h1 {
-    font-size: 80px;
+    font-size: 5rem;
   }
 
   .cta {
@@ -513,9 +517,7 @@ nav ul li.active a{
   .social li:nth-child(2n) {
     padding-right: 0;
   }
-}
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
   .slideshow-nav {
     display: none;
   }
@@ -526,11 +528,11 @@ nav ul li.active a{
   }
 
   .project-info h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .project-info h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .single-project .project-info {
@@ -541,7 +543,7 @@ nav ul li.active a{
 
 @media screen and (max-width: 600px) {
   .cta h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 1.1;
   }
 
@@ -594,15 +596,23 @@ nav ul li.active a{
   .copyright p {
     text-align: center;
   }
+
+  nav ul li {
+    margin-right: 24px;
+  }
+
+  .social li {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .cta h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.1;
   }
 
@@ -617,11 +627,11 @@ nav ul li.active a{
   }
 
   .project-info h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .project-info h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .slideshow-nav {
@@ -685,7 +695,7 @@ nav ul li.active a{
   .fa-bars {
       display: block;
       color: white;
-      font-size: 25px;
+      font-size: 1.5625rem;
       padding: 20px;
   }
 
@@ -721,10 +731,17 @@ nav ul li.active a{
 
   #menu li a {
     display: block;
+    padding: 9px;
+    background: rgba(255, 255, 255, 0.2);
   }
 
   #menu li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 8px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #menu {
+    /*display: none !important;*/
   }
 }

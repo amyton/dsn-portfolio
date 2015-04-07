@@ -75,10 +75,6 @@ header{
   display: none;
 }
 
-#menu {
-  display: none;
-}
-
 nav ul li{
   display: inline-block;
   margin-right: 38px;
@@ -738,11 +734,5 @@ nav ul li.active a{
 
   #menu li a:hover {
     background: rgba(255, 255, 255, 0.3);
-  }
-}
-
-@media screen and (min-width: 481px) {
-  #menu {
-    /*display: none !important;*/
   }
 }

@@ -1,6 +1,7 @@
 $('#menu-button').on('click', function(e) {
   var $menu = $('#menu');
   $menu.slideToggle(400);
+
   console.log('clicked');
 });
 

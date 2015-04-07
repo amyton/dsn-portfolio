@@ -652,6 +652,7 @@ nav ul li.active a{
 
   .details li {
     width: 100%;
+    text-align: center;
   }
 
   .details li:first-child {

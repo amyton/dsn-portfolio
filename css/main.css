@@ -480,10 +480,12 @@ section.selected {
 .footer-links a {
   opacity: 1;
   color: #555;
+  padding-bottom: 0;
 }
 
 .footer-links a:hover {
   color: #9a8c6a;
+  border: none;
 }
 
 .services li {

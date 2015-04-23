@@ -143,7 +143,14 @@ section.selected {
   width: 190px;
 }
 
-.title{
+.title {
+  transform: translatey(25%);
+  -webkit-transform: translatey(25%);
+  -moz-transform: translatey(25%);
+  -o-transform: translatey(25%);
+}
+
+.hero-title-box{
   width: 80%;
   margin: 0 auto;
   position: absolute;
@@ -155,7 +162,7 @@ section.selected {
   -o-transform: translate(-50%, -60%);
 }
 
-.title .button {
+.hero-title-box .button {
   padding: 10px 15px 7px;
 }
 
@@ -182,7 +189,7 @@ section.selected {
   letter-spacing: 3px;
 }
 
-.title .button:hover,
+.hero-title-box .button:hover,
 .discover a:hover {
   opacity: 0.6;
 }
@@ -210,6 +217,9 @@ section.selected {
   padding: 18px 50px;
   letter-spacing: 5px;
   transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
 }
 
 .cta .button:hover {
@@ -497,7 +507,7 @@ section.selected {
 
 
 @media screen and (max-width: 1024px) {
-  .title {
+  .hero-title-box {
     width: 99%;
   }
 

@@ -1,28 +1,40 @@
-var width = $(window).width();
+$(document).ready(function () {
 
-$(window).resize(function(){
-   if($(this).width() > 481){
-      $('#menu').show();
-   } else if ($(this).width() < 481) {
-      $('#menu').hide();
-   }
+  var width = $(window).width();
+
+  $(window).resize(function(){
+     if($(this).width() > 481){
+        $('#menu').show();
+     } else if ($(this).width() < 481) {
+        $('#menu').hide();
+     }
+  });
+
+  $('#menu-button').on('click', function(e) {
+    var $menu = $('#menu');
+    $menu.slideToggle(400);
+
+    console.log('clicked');
+  });
+
+  updateSection();
+
+  var topbarHeight = $('.top-bar').height();
+  var goalHeight = $(window).height() - topbarHeight;
+
+  console.log(goalHeight);
+  console.log(topbarHeight);
+
+  $('.title').css('height', goalHeight + 'px');
+
+  // call the carousel
+  $('.bxslider').bxSlider();
+  $('.bx-wrapper .bx-viewport').css('top', topbarHeight + 'px');
+
+
 });
-
-$('#menu-button').on('click', function(e) {
-  var $menu = $('#menu');
-  $menu.slideToggle(400);
-
-  console.log('clicked');
-});
-
-
-
 
 var navigationIsClicked = false;
-
-$(document).ready(function () {
-  updateSection();
-});
 
 $(document).scroll(function () {
   // we want to avoid flickering of the navigation when we click on an item

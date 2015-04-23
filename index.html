@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <section class="top-bar">
+    <section class="top-bar section section-home" data-section="home">
       <div class="container">
         <div class="logo">
           <img src="img/logo.gif" alt="Sage Logo">
@@ -22,11 +22,11 @@
         <nav class="navigation">
           <a href="#" id="menu-button"><i class="fa fa-bars"></i></a>
           <ul class="menu" id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Get in Touch</a></li>
+            <li class="section-home" id="home"><a href="#">Home</a></li>
+            <li class="section-explore" data-section="explore"><a href="#">Explore</a></li>
+            <li class="section-portfolio" data-section="portfolio"><a href="#">Portfolio</a></li>
+            <li class="section-about" data-section="about"><a href="#">About</a></li>
+            <li class="section-contact" data-section="contact"><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -41,13 +41,13 @@
       </div>
     </section>
   </header>
-  <main>
-    <section class="cta">
+  <main class="section-wrapper">
+    <section class="cta expolore section section-explore" data-section="explore">
       <h2>We develop web sites And apps for organisations who want to do something new online.</h2>
 
       <a href="#" class="button">Explore More</a>
     </section>
-    <section class="work">
+    <section class="work section section-portfolio" data-section="portfolio">
       <article class="featured-projects projects">
         <nav class="slideshow-nav">
           <ul>
@@ -101,7 +101,7 @@
         <a href="#" class="button">Show More Projects</a>
       </div>
     </section>
-    <section class="connect">
+    <section class="connect section section-about" data-section="about">
       <div class="container">
         <ul class="details">
           <li>
@@ -126,7 +126,7 @@
         </aside>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact section section-contact" data-section="contact">
       <div class="contact-info">
         <img src="img/pin.png" alt="Pin">
         <h6>Design Studio</h6>

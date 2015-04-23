@@ -85,9 +85,10 @@ nav ul li a{
   color: #fff;
   opacity: 0.5;
   text-decoration: none;
+  padding-bottom: 15px;
 }
 
-nav ul li:hover{
+nav ul li a:hover {
   border-bottom: 3px solid #fff;
 }
 
@@ -99,10 +100,18 @@ nav ul li.active a{
   opacity: 1;
 }
 
+section.selected {
+  border-bottom: 3px solid #fff !important;
+}
+
 .top-bar{
   height: 71px;
   width: 100%;
   border-bottom: 1px solid rgba(255,255,255, 0.1);
+  background-color: rgba(8, 8, 8, 0.87);
+  position: fixed;
+  z-index: 999;
+  top: 0;
 }
 
 .logo{
@@ -706,33 +715,29 @@ nav ul li.active a{
     display: none;
   }
 
-  nav ul li:hover {
-    border-bottom: 3px solid #fff;
-  }
-
   #menu {
     position: relative;
     z-index: 5;
     top: -5px;
   }
 
-  #menu li {
-    display: block;
-    margin: 0;
-    text-align: center;
-  }
-
-  #menu li:hover {
-    border-bottom: none;
-  }
-
   #menu li a {
     display: block;
     padding: 9px;
     background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
   }
 
   #menu li a:hover {
     background: rgba(255, 255, 255, 0.3);
+    border-bottom: 3px solid #fff;
+    padding-bottom: 15px;
   }
 }
+
+
+
+
